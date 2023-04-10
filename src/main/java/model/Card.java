@@ -91,8 +91,8 @@ public class Card {
     @Override
     public String toString() {
         return "\t[" + this.uuid + "]\n" +
-                "\tQn:\t\t\t" + this.question +
-                "\n\tAns:\t\t" + this.answer + "\n";
+                "\tQn:\t" + this.question +
+                "\n\tAns:\t" + this.answer + "\n";
     }
 
     public String toTruncatedString() {
@@ -107,6 +107,6 @@ public class Card {
         String questionStr = isQnTooLong ? this.question.substring(0, 50) : this.question;
         String answerStr = isAnsTooLong ? this.answer.substring(0, 50) : this.answer;
 
-        return uuidStr + "\n\tQn:\t\t\t" + questionStr + "\n\tAns:\t\t" + answerStr + warningStr + "\n";
+        return uuidStr + "\n\tQn:\t" + questionStr + "\n\tAns:\t" + answerStr + warningStr + "\n";
     }
 }

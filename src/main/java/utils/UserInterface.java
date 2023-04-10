@@ -100,7 +100,7 @@ public class UserInterface {
             System.out.println("Here is a list of your cards :\n");
             for (int i = 0; i < cardList.size(); ++i) {
                 System.out.println(
-                        "\t" + (i + 1) + ".\t\t" + cardList.get(i).toTruncatedString()); // 1. question  answer
+                        "\t" + (i + 1) + ".\t" + cardList.get(i).toTruncatedString()); // 1. question  answer
             }
         }
     }
